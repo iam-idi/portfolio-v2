@@ -1,39 +1,46 @@
 @font-face {
-    font-family: poppins;
-    src: url("./assets/poppins");
-  }
+  font-family: poppins;
+  src: url("./assets/poppins");
+}
 
-  :root {
-    --pri-color: #0b0b0b;
-    --sec-color: #383838;
-    --font-color1: #eee;
-    --font-color2: #a0a0a0;
-    --p-size: 1.3em;
-  }
+:root {
+  --pri-color: #0b0b0b;
+  --sec-color: #383838;
+  --font-color1: #eee;
+  --font-color2: #a0a0a0;
+  --p-size: 1.3em;
+}
 
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
-  a {
-    text-decoration: none;
-    color: var(--font-color1);
-  }
+a {
+  text-decoration: none;
+  color: var(--font-color1);
+}
 
-  body {
-    font-family: poppins;
-    width: 100vw;
-    height: 100%;
-    background-color: var(--pri-color);
-    color: var(--font-color1);
-    overflow-x: hidden;
-    /* padding: 0 30px 10px; */
-  }
+body {
+  font-family: poppins;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--pri-color);
+  color: var(--font-color1);
+  overflow-x: hidden;
+  /* hide scroll bar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
-  /* header */
+/* hide scroll bar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* header */
 header {
   height: 80px;
   width: 100%;
@@ -47,260 +54,258 @@ header {
   align-items: center;
 }
 
-header nav{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 
 header h1 {
-    display: inline;
-    letter-spacing: 0.3em;
-    font-size: 45px;
-    font-weight: 800;
-    background: linear-gradient(
-      to bottom right,
-      var(--font-color1),
-      var(--font-color1),
-      #777,
-      var(--font-color1),
-      var(--font-color1)
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: fit-content;
-  
+  display: inline;
+  letter-spacing: 0.3em;
+  font-size: 45px;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom right,
+    var(--font-color1),
+    var(--font-color1),
+    #777,
+    var(--font-color1),
+    var(--font-color1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 
-header a, header a i{
-    font-size: 1.3em;
+header a,
+header a i {
+  font-size: 1.3em;
 }
 
-nav a:hover, header a i:hover{
-    color: var(--font-color2);
+nav a:hover,
+header a i:hover {
+  color: var(--font-color2);
 }
 
 /* main */
-main{
-    padding-top: 200px;
+main {
+  padding-top: 200px;
 }
 
 /* hero */
 
-#hero{
-    text-align: center;
+#hero {
+  text-align: center;
 }
 
-#hero h1{
-    font-size: 3em;
+#hero h1 {
+  font-size: 3em;
 }
 
-#hero p{
-    font-size: var(--p-size);
-    letter-spacing: 1.5px;
+#hero p {
+  font-size: var(--p-size);
+  letter-spacing: 1.5px;
 }
 
-#hero p:first-of-type{
-    color: var(--font-color2);
-    margin-bottom: 80px;
-    letter-spacing: 4px;
+#hero p:first-of-type {
+  color: var(--font-color2);
+  margin-bottom: 80px;
+  letter-spacing: 4px;
 }
 
-#hero a{
-    display: block;
-    width: fit-content;
-    border: 2px solid var(--font-color2);
-    padding: 10px;
-    margin: 0px auto;
-    transition: 1s ease-in-out;
+#hero a {
+  display: block;
+  width: fit-content;
+  border: 2px solid var(--font-color2);
+  padding: 10px;
+  margin: 0px auto;
+  transition: 1s ease-in-out;
 }
 
-#hero a:first-of-type{
-    margin: 60px auto 20px;
+#hero a:first-of-type {
+  margin: 60px auto 20px;
 }
 
-#hero a:last-of-type{
-    margin: 0px auto 60px;
+#hero a:last-of-type {
+  margin: 0px auto 60px;
 }
 
-#hero a:hover{
-    background-color: var(--sec-color);
+#hero a:hover {
+  background-color: var(--sec-color);
 }
 
 /* sections */
 
-section:not(#hero){
-    padding: 2% 8%;
+section:not(#hero) {
+  padding: 2% 8%;
 }
 
-.heading{
-    font-size: 2em;
-    letter-spacing: 0.1em;
-    margin-bottom: 40px;
+.heading {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 
 /* about */
 
-#about p{
-    font-size: var(--p-size);
-    line-height: 1.5em;
+#about p {
+  font-size: var(--p-size);
+  line-height: 1.5em;
 }
 
 /* project */
 
-.project-box{
-    display: flex;
-    gap: 3%;
-    justify-content: flex-start;
-    align-items: center;
+.project-box {
+  display: flex;
+  gap: 3%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.sn{
-    font-size: 2.5em;
+.sn {
+  font-size: 2.5em;
 }
 
-.project{
-    width: 40%;
-    min-height: 15%;
-    /* border: 2px solid var(--sec-color); */
-    background-color: #101010;
-    box-shadow: 10px 10px 10px 5px #000;
-    margin-bottom: 4%;
-    padding: 40px 20px;
+.project {
+  width: 40%;
+  min-height: 15%;
+  /* border: 2px solid var(--sec-color); */
+  background-color: #101010;
+  box-shadow: 10px 10px 10px 5px #000;
+  margin-bottom: 4%;
+  padding: 40px 20px;
 }
 
-.project h3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 40px;
-    font-size: 1.5em;
+.project h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 1.5em;
 }
 
-.project p{
-    text-align: center;
+.project p {
+  text-align: center;
 }
 
-.tech{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
 }
 
-.tech span{
-    border: 1px solid var(--sec-color);
-    padding: 5px;
+.tech span {
+  border: 1px solid var(--sec-color);
+  padding: 5px;
 }
 /* skills */
 
-.skills-box{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+.skills-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skill{
-    font-size: 1em;
-    width: fit-content;
-    border: 3px solid var(--sec-color);
-    padding: 10px;
+.skill {
+  font-size: 1em;
+  width: fit-content;
+  border: 3px solid var(--sec-color);
+  padding: 10px;
 }
 
-.skill:hover{
-    background-color: var(--sec-color);
+.skill:hover {
+  background-color: var(--sec-color);
 }
 
 /* articles */
 
-.articles-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
+.articles-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
 }
 
-.article{
-    margin: 10px 0;
-    min-height: 150px;
-    width: 20%;
-    background-color: #101010;
-    box-shadow: 10px 10px 10px 5px #000;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 10px;
-    font-size: 1.05em;
+.article {
+  margin: 10px 0;
+  min-height: 150px;
+  width: 20%;
+  background-color: #101010;
+  box-shadow: 10px 10px 10px 5px #000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  font-size: 1.05em;
 }
 
-.article:hover{
-    transform: scale(1.1);
+.article:hover {
+  transform: scale(1.1);
 }
 
-.article .article-date{
-    margin-bottom: 10px;
-    color: var(--font-color2);
+.article .article-date {
+  margin-bottom: 10px;
+  color: var(--font-color2);
 }
 
-.article h3{
-    font-size: 1.15em;
-    margin-bottom: 20px;
+.article h3 {
+  font-size: 1.15em;
+  margin-bottom: 20px;
 }
 
-.article .readtime{
-    color: var(--font-color2);
+.article .readtime {
+  color: var(--font-color2);
 }
 
-.article .readtime i{
-    display: inline-block;
-    margin-right: 5px;
-    color: var(--font-color2);
+.article .readtime i {
+  display: inline-block;
+  margin-right: 5px;
+  color: var(--font-color2);
 }
 
 /* contact */
 
-#contact{
-    text-align: center;
+#contact {
+  text-align: center;
 }
 
-#contact h2{
-    margin: 50px 0px 30px;
-    font-weight: 100;
-    font-size: 3.5em;
+#contact h2 {
+  margin: 50px 0px 30px;
+  font-weight: 100;
+  font-size: 3.5em;
 }
 
-#contact p{
-    margin-bottom: 40px;
-    font-size: 1.3em;
+#contact p {
+  margin-bottom: 40px;
+  font-size: 1.3em;
 }
 
-#contact .social{
-    margin-bottom: 100px;
-    display: flex;
-    gap: 3%;
-    font-size: 1.5em;
-    justify-content: center;
-    align-items: center;
+#contact .social {
+  margin-bottom: 100px;
+  display: flex;
+  gap: 3%;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
 }
 
-#contact .social i{
-    color: var(--font-color2);
+#contact .social i {
+  color: var(--font-color2);
 }
 
-#contact .social i:hover{
-    color: var(--font-color1);
-    transform: scale(1.2);
+#contact .social i:hover {
+  color: var(--font-color1);
+  transform: scale(1.2);
 }
-
-
-
