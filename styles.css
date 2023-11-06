@@ -1,0 +1,182 @@
+@font-face {
+    font-family: poppins;
+    src: url("./assets/poppins");
+  }
+
+  :root {
+    --pri-color: #0b0b0b;
+    --sec-color: #383838;
+    --font-color1: #eee;
+    --font-color2: #a0a0a0;
+    --p-size: 1.3em;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--font-color1);
+  }
+
+  body {
+    font-family: poppins;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--pri-color);
+    color: var(--font-color1);
+    overflow-x: hidden;
+    /* padding: 0 30px 10px; */
+  }
+
+  /* header */
+header {
+  height: 80px;
+  width: 100%;
+  background-color: var(--pri-color);
+  position: fixed;
+  padding: 10px 50px 10px;
+  z-index: 2;
+  color: var(--font-color1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+header h1 {
+    display: inline;
+    letter-spacing: 0.3em;
+    font-size: 45px;
+    font-weight: 800;
+    background: linear-gradient(
+      to bottom right,
+      var(--font-color1),
+      var(--font-color1),
+      #777,
+      var(--font-color1),
+      var(--font-color1)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+  
+}
+
+header a, header a i{
+    font-size: 1.3em;
+}
+
+nav a:hover, header a i:hover{
+    color: var(--font-color2);
+}
+
+/* main */
+main{
+    padding-top: 200px;
+}
+
+/* hero */
+
+#hero{
+    text-align: center;
+}
+
+#hero h1{
+    font-size: 3em;
+}
+
+#hero p{
+    font-size: var(--p-size);
+    letter-spacing: 1.5px;
+}
+
+#hero p:first-of-type{
+    color: var(--font-color2);
+    margin-bottom: 80px;
+    letter-spacing: 4px;
+}
+
+#hero a{
+    display: inline-block;
+    border: 2px solid var(--font-color2);
+    padding: 10px;
+    margin: 60px 0;
+    transition: 1s ease-in-out;
+}
+
+#hero a:hover{
+    background-color: var(--sec-color);
+}
+
+/* sections */
+
+section:not(#hero){
+    padding: 3% 8%;
+    border: 1px solid red;
+}
+
+.heading{
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+/* about */
+
+#about p{
+    font-size: var(--p-size);
+    line-height: 1.5em;
+}
+
+/* project */
+
+.project-box{
+    display: flex;
+    gap: 3%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sn{
+    font-size: 2.5em;
+}
+
+.project{
+    width: 60%;
+    height: 15%;
+    border: 2px solid var(--sec-color);
+    margin-bottom: 2%;
+    padding: 20px;
+}
+
+.project h3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project h3{
+    font-size: 1.5em;
+}
+
+.project p{
+    text-align: center;
+}
+
+/* skills */
+
+
