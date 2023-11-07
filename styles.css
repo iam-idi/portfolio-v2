@@ -154,7 +154,7 @@ section:not(#hero) {
 /* about */
 
 #about p {
-  font-size: var(--p-size);
+  font-size: 1.3em;
   line-height: 1.5em;
 }
 
@@ -408,6 +408,13 @@ section:not(#hero) {
   #hero a:first-of-type {
     margin: 50px auto 20px;
   }
+
+  /* about */
+
+  #about p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
   
 }
 
@@ -454,6 +461,13 @@ section:not(#hero) {
   #hero a:hover {
     transition: none;
     background-color: var(--pri-color);
+  }
+
+  /* about */
+
+  #about p {
+    font-size: 1.1em;
+    line-height: 1.1em;
   }
 
   /* projects */
