@@ -419,6 +419,11 @@ section:not(#hero) {
 }
 
 @media screen and (max-width: 650px) {
+  .heading {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+  }
+
   /* header */
   header {
     height: 100px;
@@ -481,6 +486,13 @@ section:not(#hero) {
 }
 
 @media screen and (max-width: 500px) {
+
+  .heading {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+  }
+
   /* main */
   main {
     padding-top: 120px;
