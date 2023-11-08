@@ -511,7 +511,7 @@ section:not(#hero) {
 
   header nav {
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 100vh;
     background-color: var(--pri-color);
     border-left: 5px solid var(--sec-color);
@@ -526,7 +526,7 @@ section:not(#hero) {
 
   header a {
     font-size: 1.05em;
-    padding: 10px;
+    padding: 20px;
   }
 
   #github-icon{
@@ -545,8 +545,8 @@ section:not(#hero) {
     align-items: center;
     /* border: 1px solid red; */
     padding: 5px;
-    width: 55px;
-    height: 40px;
+    width: 40px;
+    height: 35px;
     
   }
 
@@ -566,12 +566,12 @@ section:not(#hero) {
 
   .line-menu1{
     transform-origin: left;
-    transform: rotate(37deg);
+    transform: rotate(50deg);
   }
 
   .line-menu3{
     transform-origin: left;
-    transform: rotate(-37deg);
+    transform: rotate(-50deg);
   }
 
   .line-menu2{
