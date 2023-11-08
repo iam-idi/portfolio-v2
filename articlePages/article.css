@@ -1,0 +1,124 @@
+@font-face {
+    font-family: poppins;
+    src: url("../assets/poppins");
+  }
+  
+  :root {
+    --pri-color: #0b0b0b;
+    --sec-color: #383838;
+    --font-color1: #eee;
+    --font-color2: #a0a0a0;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--font-color1);
+  }
+  
+  body {
+    font-family: poppins;
+    width: 100vw;
+    height: 100%;
+    padding: 80px 300px;
+    background-color: var(--pri-color);
+    color: var(--font-color1);
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* hide scroll bar */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* header */
+
+  .arrow-box{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 30px;
+  }
+
+  .arrow{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--font-color2);
+    transform: rotate(45deg);
+    border-top: none;
+    border-right: none;
+  }
+
+  .line{
+    width: 40px;
+    height: 1px;
+    background-color: var(--font-color2);
+    margin-left: -11.5px;
+  }
+
+  header h1{
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  header h3{
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+
+  header h3 span{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2em;
+    font-weight: 100;
+    color: var(--font-color2);
+  }
+
+  header h3 span:last-of-type{
+    margin-left: 1em;
+  }
+
+  header h6{
+    margin: 20px 0 80px;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    color: var(--font-color2);
+  }
+
+  main p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color: var(--font-color2);
+  }
+
+  .heading{
+    color: var(--font-color1);
+  }
+
+  .factBox{
+    display: block;
+    background-color: var(--sec-color);
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .sci-observe{
+    display: block;
+    background-color: var(--sec-color);
+    padding: 20px;
+    margin: 20px 0;
+  }

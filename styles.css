@@ -66,6 +66,10 @@ header nav {
   gap: 5%;
 }
 
+#github-iconNav{
+  display: none;
+}
+
 header h1 {
   display: inline;
   letter-spacing: 0.3em;
@@ -530,6 +534,7 @@ section:not(#hero) {
   }
 
   #github-iconNav{
+    display: block;
     font-size: 1.5em;
   }
 
@@ -546,7 +551,7 @@ section:not(#hero) {
   }
 
   #burger-menu div{
-    width: 100%;
+    width: 98%;
     height: 12%;
     background-color: #eee;
   }
@@ -555,18 +560,18 @@ section:not(#hero) {
     display: flex;
   }
 
-  .line-menu{
-    transition: 0.5s ease-in-out;
-  }
+  /* .line-menu{
+    transition: 1s ease-in-out;
+  } */
 
   .line-menu1{
-    transform-origin: right;
-    transform: rotate(-40deg);
+    transform-origin: left;
+    transform: rotate(37deg);
   }
 
   .line-menu3{
-    transform-origin: right;
-    transform: rotate(40deg);
+    transform-origin: left;
+    transform: rotate(-37deg);
   }
 
   .line-menu2{
