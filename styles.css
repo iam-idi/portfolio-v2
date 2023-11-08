@@ -271,7 +271,7 @@ section:not(#hero) {
 
 .article h3 {
   font-size: 1.15em;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .article .readtime {
@@ -635,6 +635,10 @@ section:not(#hero) {
 
   /* articles */
   .article {
+    font-size: 1em;
+  }
+
+  .article h3{
     font-size: 1em;
   }
 
