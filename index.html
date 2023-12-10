@@ -12,21 +12,21 @@
 
 <body>
     <header>
-        <a href="#hero"><h1 class="logo">iDi</h1></a>
+        <a href="#hero"><img class="logo" src="./assets/Indentity_Logo-removebg-preview.png"></a>
         <span id="burger-menu" onclick='onOffMenu()'>
             <div id="line1"></div>
             <div id="line2"></div>
             <div id="line3"></div>
         </span>
         <nav>
-            <a href="https://github.com/iam-idi" id="github-iconNav"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/iam-idi" id="github-iconNav"><i class="fa-brands fa-github" target="_blank"></i></a>
             <a href="#hero">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#projects">PROJECTS</a>
             <a href="#skills">ARTICLES</a>
             <a href="#contact">CONTACT</a>
         </nav>
-        <a href="https://github.com/iam-idi" id="github-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/iam-idi" id="github-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
     </header>
     <main>
         <section id="hero">
@@ -44,18 +44,24 @@
         <!-- about -->
         <section id="about">
             <h2 class="heading">ABOUT</h2>
-            <p>Hello, welcome to my webpage, my name is Idris Mu'azu Muhammad, nahh just call me iDi (e-d) like most people do, i am a passionate developer who has great focus in creating server side solutions. I also love writing, sci-fi movies and books, lots of books. Seriously writings like this aren't fun, you are probably bored from reading this, well so i was when writing it, let's kill the boredom, let me tell you about how i made my first 10 million it was very easy but it was in a dream. Alright you still have no idea what this about is about so let's forget about this about section.</p>
+            <p>Hello and welcome to my webpage! I'm Idris Mu'azu Muhammad, or just 'iDi' (pronounced e-d) for short like most folks call me. I'm a passionate developer, specializing in crafting robust server-side solutions. Besides coding, I have a keen interest in writing, watching movies, and, well, reading books.
+
+            I get it, the usual intros can be a bit dry. I felt it while writing this, and you're probably feeling it now. So, let's shake things up. <br><br>
+
+            I'm still trying to generate a suitable, funny and human relatable joke with Chat-GPT to shake things up. <br><br>
+
+            Now, let's ditch the boring 'about' stuff and dive into the good stuff, sorry i mean the rest of the website.</p>
         </section>
         <!-- projects -->
         <section id="projects">
             <h2 class="heading">PROJECTS</h2>
-
+            
             <div class="project-box">
                 <h3 class="sn">01</h3>
                 <div class="project">
                     <h3>
                         <span>Web Crawler</span>
-                        <a href="https://github.com/iam-idi/webcrawlerhttp" class="fa-brands fa-github"></a>
+                        <a href="https://github.com/iam-idi/webcrawlerhttp" class="fa-brands fa-github" target="_blank"></a>
                     </h3>
                     <p>A crawler that crawls any provided website and logs all the links and number of every link's occurence in every page of the provided website, the software generates the result as a report. I almost crawled the whole internet via wikipedia, LOL.
                     </p>
@@ -65,13 +71,46 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-box">
                 <h3 class="sn">02</h3>
                 <div class="project">
                     <h3>
+                        <span>Blog App</span>
+                        <a href="https://github.com/iam-idi/blog-App" class="fa-brands fa-github" target="_blank"></a>
+                    </h3>
+                    <p>A blog application that implements the four basic CRUD operations and the application is server-side rendered using the EJS template/view engine.
+                    </p>
+                    <div class="tech">
+                        <span>NODEJS</span>
+                        <span>EXPRESS</span>
+                        <span>EJS</span>
+                        <span>MONGODB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <h3 class="sn">03</h3>
+                <div class="project">
+                    <h3>
+                        Todo List
+                        <a href="https://github.com/iam-idi/node-todo-list" class="fa-brands fa-github" target="_blank"></a>
+                    </h3>
+                    <p>A todo list that implements the basic CRUD operations to allow a user to add a task to a list and to delete tasks as well.
+                    </p>
+                    <div class="tech">
+                        <span>NODE</span>
+                        <span>EXPRESS</span>
+                        <span>EJS</span>
+                        <span>MONGODB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <h3 class="sn">04</h3>
+                <div class="project">
+                    <h3>
                         Biz Logger
-                        <a href="https://github.com/iam-idi/biz-logger" class="fa-brands fa-github"></a>
+                        <a href="https://github.com/iam-idi/biz-logger" class="fa-brands fa-github" target="_blank"></a>
                     </h3>
                     <p>A business payment/invoice logger that logs onto a webpage a payer's or receipient's name, the amount of money and the purpose for payment.
                     </p>
@@ -83,13 +122,12 @@
                     </div>
                 </div>
             </div>
-            
             <div class="project-box">
-                <h3 class="sn">03</h3>
+                <h3 class="sn">05</h3>
                 <div class="project">
                     <h3>
                         Tic Tac Toe
-                        <a href="https://github.com/iam-idi/tic-tac-toe" class="fa-brands fa-github"></a>
+                        <a href="https://github.com/iam-idi/tic-tac-toe" class="fa-brands fa-github" target="_blank"></a>
                     </h3>
                     <p>A tic-tac-toe game, designed because a friend challenged me to a game during an argument on the accuracy of chance and probability, we didn't have the game at the moment hence i built one.
                     </p>
@@ -102,11 +140,11 @@
             </div>
 
             <div class="project-box">
-                <h3 class="sn">04</h3>
+                <h3 class="sn">06</h3>
                 <div class="project">
                     <h3>
                         Dino Game
-                        <a href="https://github.com/iam-idi/dino-game" class="fa-brands fa-github"></a>
+                        <a href="https://github.com/iam-idi/dino-game" class="fa-brands fa-github" target="_blank"></a>
                     </h3>
                     <p>A basic arcade game, dino game was inspired by Google's chrome dino game.
                     </p>
@@ -114,22 +152,6 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JAVASCRIPT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <h3 class="sn">05</h3>
-                <div class="project">
-                    <h3>
-                        Javascript Documentation
-                        <a href="https://github.com/iam-idi/Javascript-documentation.git" class="fa-brands fa-github"></a>
-                    </h3>
-                    <p>A comprehensive javascript documentation, which is very beginner friendly, this was designed for beginners in javascript to understand javascript via an explicit method. This was inspired by MDN DOCS.
-                    </p>
-                    <div class="tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
                     </div>
                 </div>
             </div>
@@ -205,16 +227,16 @@
                     <h3>3 True Reasons Why You Feel Busy Even When You Are Not</h3>
                     <span class="readtime"><i class="fa-regular fa-clock"></i><span>7 mins read</span></span>
                 </a>
-                <a href="" class="article">
+                <!-- <a href="" class="article">
                     <span class="article-date">January 05, 2022</span>
                     <h3>What is wrong with school?</h3>
                     <span class="readtime"><i class="fa-regular fa-clock"></i><span>1Omins read</span></span>
-                </a>
-                <a href="" class="article">
+                </a> -->
+                <!-- <a href="" class="article">
                     <span class="article-date">January 05, 2022</span>
                     <h3>What is wrong with school?</h3>
                     <span class="readtime"><i class="fa-regular fa-clock"></i><span>1Omins read</span></span>
-                </a>
+                </a> -->
             </div>
         </section>
         <!-- contact -->
@@ -223,10 +245,10 @@
             <p>I'm open to freelance opportunities,<br>
                  or you can connect with me through my social media profiles.</p>
             <div class="social">
-                <a href="https://github.com/iam-idi"><i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com/iam_idi"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/idris-muazu-m-35839b256/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:idriscreate@gmail.com"><i class="fa-brands fa-google"></i></i></a>
+                <a href="https://github.com/iam-idi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/iam_idi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/idris-muazu-m-35839b256/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:idriscreate@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></i></a>
             </div>
         </section>
     </main>

@@ -70,7 +70,7 @@ header nav {
   display: none;
 }
 
-header h1 {
+/* header h1 {
   display: inline;
   letter-spacing: 0.3em;
   font-size: 45px;
@@ -87,6 +87,12 @@ header h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+} */
+
+header .logo {
+  width: 130px;
+  height: 100px;
+  margin-left: -45px;
 }
 
 header a,
